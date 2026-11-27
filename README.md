@@ -1,17 +1,22 @@
 # Jimmstar: YouTube agent skills
 
-Claude Code skills for running a YouTube channel. They load automatically when a request matches, or you can name them, e.g. "use yt-script-writer".
+Eleven Claude Code skills for running a YouTube channel, installed in `.claude/skills/` from
+[Jakeschincariol/youtube-agent-skill](https://github.com/Jakeschincariol/youtube-agent-skill)
+(MIT, see `.claude/skills/LICENSE-youtube-agent-skill`).
 
-| Skill | What it does |
+| Command | What it does |
 |---|---|
-| `yt-video-ideas` | Brainstorms and scores video ideas, and keeps a backlog |
-| `yt-script-writer` | Writes long-form scripts with a hook, retention beats and a CTA |
-| `yt-title-thumbnail` | Writes titles and thumbnail concepts, plus A/B variants |
-| `yt-description-seo` | Writes descriptions, chapters, tags, hashtags and the pinned comment |
-| `yt-shorts-repurpose` | Turns long videos into Shorts and writes original Shorts |
-| `yt-analytics-review` | Diagnoses Studio metrics and gives prioritised fixes |
-| `yt-community-replies` | Drafts comment replies and community posts |
+| `/yt-script` | Idea → script: 5 hooks from 21 formulas, scored, with on-screen beats marked |
+| `/yt-package` | Title and thumbnail written and linted together |
+| `/yt-edit` | Transcript → list of cuts (dead air, filler, retakes) |
+| `/yt-comment` | Sorts comments and drafts replies; says which to pin |
+| `/yt-plan` | A week sized to your hours: 1 main video, 1 easy one, 3 Shorts |
+| `/yt-viral` | What's working in your niche, ranked against each channel's median |
+| `/yt-retention` | Reads a retention export: early drop-off, sudden drops, slow decline |
+| `/yt-shorts` | Finds the Shorts inside a long video |
+| `/yt-seo` | Description, tags, and the 3 searches the video should win |
+| `/yt-chapters` | Chapters that pass YouTube's rules |
+| `/yt-audit` | Whole-channel review ending in one fix |
 
-**Start here:** fill in `channel/profile.md`. Every skill reads it to match your niche and voice.
-
-Example workflow: ideas → script → title/thumbnail → description → Shorts → analytics review after 7 days.
+**Start here:** fill in `channel/voice.md`. Every skill reads your voice profile.
+Nothing here publishes to YouTube; the skills write, you upload.
