@@ -19,9 +19,9 @@ python3 title.py titles.txt            # one per line, ranked
 
 ## Before you write
 
-1. Read `~/.claude/youtube/voice.md` if it exists. That is the user's voice profile: how they talk
+1. Read `channel/voice.md` (at the repo root) if it exists and has been filled in. That is the user's voice profile: how they talk
    on camera, the words they never use, who they are talking to, what they will not claim. If it
-   does not exist, ask for **three of their own videos**, read or transcribe them, infer the voice,
+   is missing or still the blank template, ask for **three of their own videos**, read or transcribe them, infer the voice,
    and write the file. A script in the wrong voice is worse than no script, because they have to
    read it out loud.
 2. Never invent a number, a result or a source. If a figure would strengthen it and you do not have
